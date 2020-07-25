@@ -687,6 +687,11 @@
 		
 		var tbl = document.getElementById("dataTable");
 		
+		var x =tbl.rows.length;
+		while(--x){
+			tbl.deleteRow(x);
+		}
+		
 		for(i=0;i<arr.length;i++){
 			var r = tbl.insertRow();
 			var cell0 = r.insertCell();
